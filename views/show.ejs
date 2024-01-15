@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book Details</title>
+
+  <style>
+
+    h1{
+      display:block; 
+  margin-top: 40px;
+  align-items: center; 
+  align-content: center;
+  margin-left: 700px;
+
+  font-size: 40px;
+    }
+
+    h3{
+      font-weight:bold;
+      font-style: normal;
+       font-family: 'Times New Roman', Times, serif;
+      font-size: 29px;
+      background-color: cornsilk;
+    }
+
+    p{
+        font-weight:bold;
+        
+        font-style: normal;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+    }
+
+    .book{
+      
+  padding-left: 320px;
+  width: 1100px;
+  height: 230px;
+
+    }
+
+    .button{
+      display:flex;
+ width: 550px;
+  padding-left: 800px;
+  box-sizing: 40px;
+  height: 4ppx;
+  margin-top: 140px;
+
+    }
+
+    img{
+      padding: 2px;
+  width: 1200px;
+  height: 500px;
+ max-height: 700px;
+ align-items: center;
+ margin-left: 250px;
+ margin-top: 50px;
+
+
+ }
+ .boxs{
+  height: 12px;
+ width: 1200px
+
+ }
+   
+
+
+
+
+  </style>
+ 
+</head>
+<body>
+
+  <div class="boxs">
+    <img src="https://lh3.googleusercontent.com/p5dYUDS-uOUxYz4qNZeK1rU5TIAYVXRqNR9fYV2ZuQrjiN6eQPwy8MidXvZDnsxmfmITTRxaZtyM5QjoB0hVges99NhfYkBo=s1000" />
+</div>
+  
+  <h1>Book Details</h1>
+  <div class="book"> 
+
+  <h3><%= book.title %></h3>
+  <p>content: <%= book.content %></p>
+  <p>Author: <%= book.author %></p>
+  <p>Price: <%= book.price %></p>
+  
+</div>
+
+<div class="button"> 
+<form>  
+  <button> 
+  <a href="/books/<%= book._id %>/edit"> Edit Button </a>
+</form>
+</button>
+  <form action="/books/<%= book._id %>?_method=DELETE" method="POST" style="display: inline">
+    <button type="submit">Delete Button </button>
+  </form>
+
+</div>
+</body>
+</html>

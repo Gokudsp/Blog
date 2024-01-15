@@ -1,0 +1,113 @@
+\<!DOCTYPE html>
+<html>
+<head>
+<title>Add Book</title>
+<link rel="stylesheet" type="text/css" href="/public/style.css">
+
+<style>
+
+h1{
+  display: inline-block; 
+  align-items: center; 
+  align-content: center;
+  margin-left: 800px;
+  font-size: 40px;
+margin-top: 40px;
+border-top: 40px;
+ 
+ 
+
+}
+
+form{
+ flex-direction: column;
+  align-items: center;
+  column-gap: 20px;
+  padding-left: 500px;
+  margin-right: 400px;
+  text-align: center;
+  width: 20px;
+  height: 150px;
+  top: 30px;
+}
+
+img {
+ width: 850px;
+ max-height: 550px;
+ align-items: center;
+ margin-left: 500px;
+}
+.box {
+ height: 200px;
+ width: 200px;
+}
+
+input{
+
+flex-direction: column;
+align-content: center;
+align-items: center;
+padding-right: 30px;
+height: 30px;
+}
+
+label{
+ font-weight:bold;
+ font-style: normal;
+ font-family: 'Times New Roman', Times, serif;
+ font-size: 24px;
+ }
+
+ img{
+  width: 1400x;
+ max-height: 500px;
+ align-items: center;
+ margin-left: 500px;
+
+
+ }
+ .boxs{
+  height: 12px;
+ width: 50px
+
+ }
+
+
+</style>
+
+</head>
+
+
+<body>
+
+  <div class="boxs">
+    <img src="https://media.istockphoto.com/id/1189482882/photo/open-book-in-the-grass-on-the-field.jpg?s=612x612&w=0&k=20&c=bJohKRxncLkxaWonfvoOYRYt7l4sfwpn66dLXNxllA8=" />
+</div>
+  
+  <h1>Add New Book</h1>
+
+  <div class="box">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCwihc-A0GinY6SlBX8HtNjObUfed1nTAzXOC50VpIgI61rBzO1lBlh9Cmpw&s" />
+</div>
+
+  <form action="/books" method="POST">
+     
+    <label for="title">Title:</label> 
+    <input type="text" id="title" name="title" contenteditable ="4"  required>
+<br>
+    <label for="content">content:</label>
+    <input type="text" id="content" name="content" contenteditable ="4"  required>
+<br>
+    <label for="author">Author:</label>
+    <input type="text" id="author" name="author" contenteditable ="4"  required>
+<br>
+    <label for="price">Price:</label>
+    <input type="number" id="price" name="price" contenteditable ="4"  required>
+<br>
+
+ 
+    <button type="submit">Create</button>
+
+  </form>
+</body>
+</html>

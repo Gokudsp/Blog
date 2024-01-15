@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+
+  <!-- <link rel="stylesheet" href="/views/index.css" > -->
+
+  <style>
+
+    *{
+    padding: 0;
+    display: flexbox;
+    box-sizing: border-box;
+
+}
+    body {
+    
+    
+      display: block;
+      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZNZHgl27hb6NrIqUWpEJBhcOwodkiLx-B-ZOaPrkcj_oGrtrUgyOCdWydkyfMnaxdRLI&usqp=CAU");
+      position: absolute;
+      align-items: center;
+     width: 1200px;
+     height: 1200px;
+     
+ 
+
+    }
+    
+    h1{
+      color: blue;
+    align-items: center;
+    margin-left: 550px;
+    padding-bottom: initial;
+    display: block ruby;
+    grid: inherit;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    gap: 30px;
+  }
+    .box{
+      position: absolute;
+      padding: 20px;
+     
+
+
+    gap: 30px;
+
+  }
+  .box1{
+  display: flexbox;
+  align-items: end;
+  margin-right: 300px;
+  }
+
+  .addbooks{
+    background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAI4BAwMBIgACEQEDEQH/xAAcAAADAAIDAQAAAAAAAAAAAAAAAQIDBgQFCAf/xABHEAACAAMDBAsNBwIHAAAAAAAAAQIDEQQF0QYSFpIVUlNUYoGRodLh8BMhIjJCUVVhcYKTlKIHQWRlcrHBFDEXNGODhMLi/8QAGgEBAQEBAQEBAAAAAAAAAAAAAAECAwQGBf/EACsRAQABAgUDBAIBBQAAAAAAAAABAgMRExRRUgQS0RWRobEhIlMFMUKB8P/aAAwDAQACEQMRAD8A64QCqfSPgjASAAGICgHUSAB1AQwAYgAdRCAAEwYMKBMZLAQmMlkbAgZLYUNgAiKGIGxBomJjYgpEsZJGogmJjZLYaIAAjWDtgEBt4TEAAMBDCAQDAAAChgAAAgYAIAYgoEAEagiRiYVImMRFIQMA0GIBBSYhiDREsYmRpLJKExLSQACK7WokyajRp48FVGSNFQwAAgAAAYAAQIEA0ACGBRImU0JhSoSWQyLBElEsNJYhiI3BCGxBSYMGIKTENiI1CRMbEwpMkpkkaIAAK59SjEoilEaebBlTKMKiLUYZmFjIzwURcWcGQQs4M4GBjFUVQmChkopMIYUCpSCFQlosmJlIlBLLbIZG4SyGU2Q2RuAS2NksNRAYqgxBoAICBCYxBqCYmNkhomIbEyNQQCAK3/YnJPyZttWs/wCB7DZL76ty4n0TaNHbv2kXKsBaOXftY+bA/Dz7nKX0ukscIazsHkxvu3cn/kewOTUXi2+2rk6Jsujlg/1PpwDRyxbaZ9OBc+7ylnR2OENZ0eyd9JWzkXRGsnsm/Sdq5YeibJo5YttM+nAWjlk8mOZyQ4DUXeRoun4Q1zR7Jv0rauNw4Bo9k76YnccUGBsejll3WbyQ4Bo5Z92m/TgNRd3TRdPwhrmj2Tvk3xM1ocA0duD0xHywmxaOyN8TeRC0clb6m8iLqbvJNB0/CGvrJ64PTD43CUsn7g9MLlhO90cg37M5ELRz8bM1esam7yT0/puEfPl0byduOLxb6S1TJBkxdEXi3unxQ4nbPJuPybwj1ViRFkzN9IPjh6y6q7yT07puH35cSXkZYJkOdDbomvOoViaplbYYLhvGRI7t3WXPgccLpRw0dGmbZa8nrwl2adFZreq5kWbRuF1o6Hxy1XhbbfMgnW+0TJ85Q5udH/dLzd72nfp792qr8z+Hm6roumoo/WnCWyQxqLvwibOhstsjl95vvHaSrTDMP0qa4qfiXLFVEs7ZLYOIhs0xEKbE2KomRTE2KoqlWIMAALgGSNiIpNiG0JiVSJjERqCAACvvudwecedwedHm9SJ297ZxWqPEyKC1Q+LKt69lrj6R+d6dP8kfPh9BrqNvmPL0YouD+w68F8x50X9XuV4/OR9ItR2+HxYbzXstsxf9h6dV/JT8+E11G315eiK8F8qCvBfMeeO6Xh+a/PTOkCivDzXr87M6Qj+n1c6fnwa6jb68vQ9eC+YK8F8x55z7y/NvnZnSH3S89te3z0zpD06rnT8+DX29vry9C14L5grwXzHnrut67a9/npnSH3a89te/zs3pE9Pq5x8+F11vb68vQed6nzBncDnR587teu2vf56b0g7vev5v89OxL6fPOPnwa6jb68vQec9o+VBncHnPPMVpvXzXt89OxI/rb1h8q9F/zp2JNBPOPnwuto2+vL0Tn7aFa3UfCcssmo8m7bLlxWiC0QWhRRwOGFpwpOlGm33++cSVlBfVnhpLtV5Q/f4Voii522cG8b7tV6xS4rXaJ05y6pOY6tJ/cbo6WbU498f9/pyu3qbtOEQwJmaVNcJgQ6nXHB4pjF2cq0nIhmnSwx5pyJc8603Hmrs7O1UQ6nDlzjNDMOsS880YMtQqSoho0ypDENBAxDYgEIYEVDEUxEaQBVACvpOg917aZqwBoNde3masBtdO1esdO1es/Cza931OTb2anoLdu3i1IA0FuzbzNSA2unC5+sfvc/WTNr3Mi3s1PQW7dvM1IBaCXbusWpAbb73P1h73P1lza9zJt7NS0Eu3dY/hwC0Eu/dY/hwYm3e9z9Ye89brGbXuZFri1LQS7d1j+HAGgt27rFqQYm2+99TxDjes8Rm17mRb2ajoJdu6x6kGIaCXZusepLxNt9563WHvPXeIza90yLWzU1kLdm3j1ZeIPIe7N1mckGJtnvvXfSFXhvXfSGbXuuRb2afHkLYPJtEa9sMHSPi7Wba5yzq0jar56M9L14ca7/3RvpHmOP8AzMz9b/c6Wq6qp/Ljet000/rDmphU46zvOFGe3F4e1nqUojjUY6MRMnbDmwTTky5x1cKZlgZumuXKu3Eu4hmIywxHVS4zkQRHamt5a7TsVEik0cKGItRHTFxmhyaibMKYVGKdrKNswCqTE7WZsVTFUkYtdrPUDBUCYr2Pvnbt3x9u3fNPX2jXVvS36kHSLX2h3PuFuX+3D0j8nRdRwl9LqbPKG2+EM1P/ABCuXaW34SxKh+0C5drbV7ZK/hk0fUcJ9l1FnlDau3bvh27d81ZZf3J+L45LxKWXtybe0fBiwJpOo4T7Gfa5R7tn8IPC237ms6eXJt7R8GLAFl3ce6zl7ZMf8IaS/wAJ9pXPtco92zd/tXEfhevnxNZ07uLdpvwI8CtObg31M+BHgNLf4T7SZ9rlHu2OsXr7cY/C9fbjNbWXFxb4mfAjwFpzcXlTpq9siPok0t/hPtJn2uUe7ZPC9fbjFWLbPnxNbiy7uKHxZ02P9MmP+UiIsv7jh8WG2R/pk4tFjpOon/CfYm/a5R7tnTizl4X3+vE8vuPuk+ZHto3Fyuvnf7s+4TPtFuzNfc7JeFaOlYIEq658UdkikzM2KNNr+7Tb/c7UdLet/tXTg896/brjCmcVQodC4YGZFIj8x6IiXhmqGCg6HJVlj8xSskReyWcylxkhpHKVliLVmNdkszcpceEzyzLDILhlG4olyqrgoGZRqWWoTpEOFVUJGVQKBjFDEZBZoXFjE0ZGhUGC4sdALoBFxPYuz7ed8Rgrrs+6ztczZ7Go2de5jMubsKuuRus7XK2Lk7vO1+oyqJjUTL3ymZc3Ydi5W7WjX6g2Llb4n6ywM+cx1HfO6Ztzdg2Kg31P1lgLYqDfU7lWByKhnMd87yZtzdx1dUG+p/LDgPYuHflo+nA5FR5xe+rdM25u4ruv8ZaPpwFsV+NtH04HLzwzh31bmbc3cTYv8baOWHAl3X+NtHLDgc1MTiHfVuudc3+nXx3XtrVOfGsCILtky/Kij9bZ2MURhiMVft/d0i9cmMMWGGRBD4qKzC0BPwkzMozRZpkoFAYsWaNIsBguKUhpFUGkMExJIpIEhoMzIoFBgETQRQASSUAVIDAi4v/Z");
+   position: absolute;
+   background-color:white;
+    align-items: center;
+    margin-left: 1200px;
+   width: 200px;
+   height: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    margin-top: -10px;
+
+  }
+  h3{
+    display: block;
+    background-color:white;
+    width: 300px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  h2{
+    padding: 2px;
+    color:rgb(124, 51, 51);
+    margin-top: 60px;
+    margin-left: 60px;
+    font-size: 25px;
+    font-style: oblique;
+    border-radius: 2px;
+   
+  }
+  p{
+    font-weight:bold;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+  }
+
+  img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px;
+  height: 200px;
+  width: 650px;
+  margin-top: 10px;
+}
+
+
+
+    </style>
+ 
+</head>
+<body >
+ 
+ 
+    
+  <h1>Bookshop Web Blog</h1>                                                                                                                                                                                                
+<div class="box"> 
+
+    
+  <h2> ABJ LIFE STORY </h2>
+
+  <img src="https://img.freepik.com/free-photo/book-composition-with-open-book_23-2147690555.jpg?size=626&ext=jpg" alt="photo"> 
+
+  <ul>
+    <% books.forEach((book) => { %>
+   
+    <div class="box1"> 
+      <li>
+       
+        <h3>Title: <%= book.title %></h3>
+        <p>Author: <%= book.author %></p>
+        <p>Price: <%= book.price %></p>
+        <p>content: <%= book.content %></p>
+        <a href="/books/<%= book._id %>">View Details Books</a>
+      </li>
+    <% }) %>
+ 
+  </ul>
+</div>
+</div>
+
+
+<div class="addbooks"> 
+  <a href="/books/new">Add New Book</a>
+</div>
+
+</body>
+</html>
